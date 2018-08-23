@@ -1,3 +1,7 @@
+### Basic Auth
+这是一种非常简单的认证方式，通过把账号密码以
+`Basic <base64.StdEncoding.EncodeString(<account>:<password>)>`的形式设置在请求头字段`Authorization`中来通过验证。(这种方式特别没水平)
+
 ### Token structure
 >[ Base64(HEADER) ] . [ Base64(PAYLOAD) ] . [ Base64(SIGNATURE) ]
 example:
